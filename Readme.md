@@ -1,4 +1,26 @@
 
+> **Note:** This is a fork of the original [Podgrab](https://github.com/akhilrex/podgrab) repository specifically to help build the project for Windows. The main purpose of this fork is to provide Windows build scripts and instructions.
+>
+> ### Windows Build Instructions
+>
+> This fork includes several batch files to build Podgrab on Windows:
+> - `compile.bat` - Standard build using MinGW64 from MSYS2
+> - `build_with_cgo.bat` - Build with CGO enabled (required for SQLite support)
+> - `build_clean.bat` - Clean build that removes old binaries first
+> - `build_test.bat` - Build and run tests
+>
+> #### Requirements:
+> - Go 1.15 or higher
+> - MinGW64 toolchain from MSYS2 (installed at `C:\msys64\mingw64`)
+> - For Visual Studio builds: Developer Command Prompt for VS 2022
+>
+> #### Quick Build:
+> ```cmd
+> compile.bat
+> ```
+>
+> For more detailed Windows setup instructions, see the `CLAUDE.md` file in this repository.
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]

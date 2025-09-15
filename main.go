@@ -147,7 +147,7 @@ func main() {
 
 	router.Static("/webassets", "./webassets")
 	router.Static("/assets", dataPath)
-	router.Static(backupPath, backupPath)
+	router.Static("/backups", backupPath)
 	router.POST("/podcasts", controllers.AddPodcast)
 	router.GET("/podcasts", controllers.GetAllPodcasts)
 	router.GET("/podcasts/:id", controllers.GetPodcastById)

@@ -18,3 +18,13 @@ assets/*
 keys/*
 backups/*
 nodemon.json
+
+# Windows build scripts
+build_clean.bat
+build_test.bat
+build_with_cgo.bat
+compile.bat
+
+# Local configuration
+.claude/
+CLAUDE.md
